@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {
+                text-align: center;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+    <a href="#">Edit Profile</a>
+    <a href="#">Attendance</a>
+    <a href="#">Notice</a>
+    <a href="#">Leave Apply</a>
+    <a href="#">Logout</a>
+    
+</div>
+
+<div class="content">
+    <h2>Latest Notice</h2>
+    <p>This is where the latest notice will be displayed.</p>
+    <h2>Notifications</h2>
+    <p>This is where notifications will be displayed.</p>
+</div>
+
+</body>
+</html>

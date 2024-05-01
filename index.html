@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Attendance System</h2>
+        <form id="attendanceForm">
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+
+            <label for="attendanceDate">Date:</label>
+            <input type="date" id="attendanceDate" name="attendanceDate" required>
+
+            <button type="button" onclick="takeAttendance()">Take Attendance</button>
+        </form>
+
+        <div id="attendanceResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

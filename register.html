@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="signup/style1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+           
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            
+
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+
+            <!-- New fields for registration -->
+            <label for="enrollmentNumber">Enrollment Number:</label>
+            <input type="text" id="enrollmentNumber" name="enrollmentNumber" placeholder="Enrollment Number *" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" placeholder="Department *" required>
+
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" placeholder="Semester *" required>
+
+            <label for="profilePhoto">Profile Photo:</label>
+            <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

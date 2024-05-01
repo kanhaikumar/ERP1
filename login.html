@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>User Login</title>
+    <link rel="stylesheet" href="signup/style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="imgcontainer">
+            <img src="signup/images.png" alt="Avatar" class="avatar">
+        </div>
+
+        <form action="login.php" method="post">
+            <div class="form-item">
+              
+            <input type="text" id="username" name="username"  placeholder="Enter User name" required>
+            </div>
+
+            <div class="form-item">
+                <span class="pwd-format">8-15 AlphaNumeric Characters</span>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="accept-box">
+                <input type="checkbox" name="accept" id="accept">
+                <label for="accept">Remember me</label>
+            </div>
+
+            <div class="form-btns">
+                <button type="submit">Login</button>
+                <div class="psw">
+                    <a href="#">Forgot password?</a> 
+                </div>
+                
+                <div class="options">
+                    Don't have an account? <a href="register.html">Sign up here</a>
+                </div>
+            </div>
+        </form>
+
+        
+    </div>
+</body>
+</html>
